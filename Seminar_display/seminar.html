@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NextGen IT Community</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+
+    body {
+      margin: 0;
+      background-color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .header img {
+      height: 70px;
+      object-fit: contain;
+      left: 20px;
+    }
+
+    .welcome-text {
+      font-size: 24px;
+      font-weight: bold;
+      color: #2e2e2e;
+      font-style: italic;
+
+    }
+
+    .container-flex {
+      display: flex;
+      min-height: calc(100vh - 100px);
+    }
+
+    .sidebar {
+      width: 300px;
+      background-color: #f8f9fa;
+      box-shadow: 4px 0 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .accordion-button {
+      font-weight: 600;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 40px;
+      background: linear-gradient(to bottom right, #e6f0ff, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 48px;
+      font-weight: bold;
+      color: #1a1a6e;
+    }
+    .main-content h1 {
+      font-size: 56px;
+      font-weight: 800;
+      color: #1a1a6e;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .main-content h2 {
+      font-size: 28px;
+      font-weight: 500;
+      color: #1a1a6e;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with logos and welcome text -->
+  <div class="header">
+    <img src="./icon_of_community.png" alt="Left Logo">
+    <div class="welcome-text">Siz NextGen IT jamiyatiga xush kelibsiz! <br> Keling, birgalikda texnologiyalar olamida yangi marralarni zabt etamiz!</div>
+
+    <img src="https://static.tildacdn.one/tild6162-6161-4530-a336-333265363137/it_community_logo_ho.png" alt="Right Logo">
+  </div>
+
+<div class="d-flex">
+  <!-- Sidebar -->
+  <div class="sidebar bg-white p-3">
+    <div class="accordion" id="menuAccordion">
+      <!-- Repeat this block 11 times -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+            Heading 1
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+          <div class="accordion-body">
+            <a href="sec1.html" class="d-block"><i> Kirish</i></a>
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+            Heading 2
+          </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+          <div class="accordion-body">
+            <a href="sec2.html" class="d-block"><i> Frontendni Ko‘rasiz, Backendni His Qilasiz</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+            Heading 3
+          </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+          <div class="accordion-body">
+            <a href="sec3.html" class="d-block"><i> BAck-end Nima? </i></a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+            Heading 4
+          </button>
+        </h2>
+        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+          <div class="accordion-body">
+            <a href="sec4.html" class="d-block"><i> Front-end Nima?</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+            Heading 5
+          </button>
+        </h2>
+        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+          <div class="accordion-body">
+            <a href="sec5.html" class="d-block"><i> Frontend-vs-Backend </i></a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading6">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
+            Heading 6
+          </button>
+        </h2>
+        <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+          <div class="accordion-body">
+            <a href="sec6.html" class="d-block"><i> Ish Bozoridagi O'rni </i></a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading7">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7">
+            Heading 7
+          </button>
+        </h2>
+        <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+          <div class="accordion-body">
+            <a href="sec7.html" class="d-block"><i>Frontend Sohasida O‘zgarishlar Va Moslashuv</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading8">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8">
+            Heading 8
+          </button>
+        </h2>
+        <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+          <div class="accordion-body">
+            <a href="sec8.html" class="d-block"><i> AI Frontendni O‘zgartiryaptimi? </i></a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading9">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9">
+            Heading 9
+          </button>
+        </h2>
+        <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+          <div class="accordion-body">
+            <a href="sec9.html" class="d-block"><i>Zamonaviy Backend: DevOps, AI va Cloud</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading10">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10">
+            Heading 10
+          </button>
+        </h2>
+        <div id="collapse10" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+          <div class="accordion-body">
+            <a href="sec10.html" class="d-block"><i>Ixtisosliklar va Ularning Ish Haqi: Global Taqqoslash</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading11">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11">
+            Heading 11
+          </button>
+        </h2>
+        <div id="collapse11" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+          <div class="accordion-body">
+            <a href="sec11.html" class="d-block">Xulosa</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-content text-center">
+    <div>
+      <h1>
+        <span style="font-family: Arial, sans-serif; font-size: 64px; font-weight: 600; color: #1f1f5f; display: flex; align-items: center; background: white; padding: 20px;">• • NextGen IT • •</span> 
+      </h1>  <br> 
+      <h2> <span> <strong>  <i> BSSIT Community</i></strong> <br> <br>
+        Kelajakni yaratish uchun birinchi qadamni tashladik! BSSIT jamoasi o‘z yo‘lini boshlab, yangiliklar va imkoniyatlar dunyosini kashf etmoqda.
+        Harakatda o‘zgarish bor! Har bir qadamimiz - bu yangi imkoniyat! 
+        Biz birgalikda kuchli bo‘lamiz, birgalikda yuksalish uchun harakat qilamiz! </span> </h2> <br> 
+      <a href="https://t.me/BSSIT_community" class="mx-4 text-decoration-none text-dark">
+        <i class="fab fa-telegram fa-2x"></i>
+      </a>
+      <a href="https://www.instagram.com/bssit_community" class="mx-4 text-decoration-none text-dark">
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+      <a href="https://www.linkedin.com/groups/10067265/" class="mx-4 text-decoration-none text-dark">
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+      <a href="https://youtube.com/@bssitcommunity?si=SnGvs4pL4kQ2t_zD" class="mx-4 text-decoration-none text-dark">
+        <i class="fab fa-youtube fa-2x"></i>
+      </a>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+
+
+
